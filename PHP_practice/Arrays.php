@@ -188,5 +188,24 @@ foreach($associatedArray as $key => $val)
     echo $val."($key)\n";
 }
 
+// MULTI-DIMENSIONAL ARRAY 
+$multiDimensionalArray = [
+    "Male" => array(
+        "Prakhar" => array("SMRT Systems", "Smarty Pants"),
+        "Yash" => array("Kurated.ai", "Hulk")
+    ),
+    "Female" => array(
+        "Shri" => array("Watts Water", "Too Small to handle"),
+    ),
+    "Dog" => array(
+        "Stevie" => array("Billion Dollar Dogs", "Snorter")
+    )
+];
+
+print_r($multiDimensionalArray);
+print_r($multiDimensionalArray['Male']);
+print_r($multiDimensionalArray['Male']['Prakhar']);
+print_r($multiDimensionalArray['Male']['Prakhar'][0]);
+
 
 ?>
